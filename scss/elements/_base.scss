@@ -1,0 +1,28 @@
+body {
+	display: flex;
+
+}
+header {
+	background-color: $tertiary-color;
+	flex: 0 0 250px;
+
+
+	.logo {
+		padding: 75px 10px;
+		background-color: $tertiary-color;
+		border-bottom: 3px solid $quatenary-color;
+
+	}
+
+}
+.main-content {
+	flex: 10 10;
+	display: flex;
+	flex-wrap: wrap;
+
+	article {
+		flex-wrap: wrap;
+		flex: 1 1 40%;
+		padding: 3%;
+	}
+}
