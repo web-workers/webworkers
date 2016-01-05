@@ -1,0 +1,52 @@
+//GRID SETUP
+
+//Full Width
+//This is the default 950 Grid
+$num-columns: 24;
+$columns-width: 30px;
+$margin-width: 10px;
+
+//Tablet
+$tablet-break: 964px;
+$num-tablet-columns: 24;
+$columns-tablet-width: 21px;
+$margin-tablet-width: 8px;
+$min-tablet-break: 768px;
+//Phone
+$nav-break: 767px;
+$phone-break: 480px;
+$phone-landscape-width: 90%;
+$margin-phone-width: 20px;
+
+$phone-portrait-width: 90%;
+
+//Displays and hides
+$main-nav: '.main-nav';
+$mobile-nav-container: '.mobile-nav';
+
+$base-font-size: 16px;
+$navlink-font-size: 20px;
+
+$hover-transition: 400ms;
+
+//Size Mixins
+@mixin tablet-phone-break() {
+    @include rf-break-smaller($tablet-break) {
+        @content;
+    }
+}
+@mixin tablet-break() {
+    @include rf-mid-breaker($min-tablet-break,$tablet-break) {
+        @content;
+    }
+}
+@mixin phone-break() {
+    @include rf-break-smaller($nav-break) {
+        @content;
+    }
+}
+@mixin phone-break-sm() {
+    @include rf-break-smaller($phone-break) {
+        @content;
+    }
+}

@@ -1,0 +1,98 @@
+//px to em
+@function em($target, $context: $base-font-size) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}
+
+@mixin rf-font-face (
+      $font-family,
+      $file,
+      $short-name: null,
+      $serif: sans,
+      $fall-back: null
+      ) { @font-face {
+        font-family: $font-family;
+        src: url('../fonts/#{$file}.eot');
+        src: url('../fonts/#{$file}.eot?#iefix'),
+        url('../fonts/#{$file}.woff'),
+        url('../fonts/#{$file}.ttf'),
+        url('../fonts/#{$file}.svg##{$font-family}');
+    }
+
+      @if $short-name != null and $fall-back != null {
+        .#{$short-name} {
+          @if $serif == sans {
+            font-family: '#{$font-family}', '#{$fall-back}', Arial, sans-serif;
+          } @if $serif == serif {
+          font-family: '#{$font-family}','#{$fall-back}', Georgia, serif;
+          }
+        }
+      }
+
+
+      @if $short-name != null and $fall-back == null {
+        .#{$short-name} {
+          @if $serif == sans {
+            font-family: '#{$font-family}', Arial, sans-serif;
+          } @if $serif == serif {
+          font-family: '#{$font-family}', Georgia, serif;
+          }
+        }
+      }
+}
+
+@mixin rf-retina() {
+    @media (min--moz-device-pixel-ratio: 1.3),
+    (-o-min-device-pixel-ratio: 2.6/2),
+    (-webkit-min-device-pixel-ratio: 1.3),
+    (min-device-pixel-ratio: 1.3),
+    (min-resolution: 1.3dppx) {
+       @content;
+    }
+}
+
+@mixin rf-break-smaller ($break-point) {
+	@media only screen and (max-width: $break-point) {
+		@content;
+	}
+}
+
+@mixin rf-mid-breaker ($break-point1, $break-point2) {
+	@media only screen and (min-width: $break-point1) and (max-width: $break-point2) {
+		@content;
+	}
+}
+
+@mixin rf-break-larger($break-point) {
+	@media only screen and (min-width: $break-point) {
+		@content;
+	}
+}
+
+/**
+* BE WARNED
+* rowMachine uses nth-child which is not supported in IE 7
+* http://caniuse.com/css-sel3
+*
+*/
+
+@mixin rowMachine($numPerRow, $margin) {
+    width: ((100% - (($numPerRow - 1) * $margin)) / $numPerRow);
+    &:nth-child(n) {
+        margin-bottom: $margin;
+        margin-right: $margin;
+    }
+    &:nth-child(#{$numPerRow}n) {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+}
+
+@mixin input-placeholder {
+	&.placeholder { @content; }
+	&:-moz-placeholder { @content; }
+	&::-moz-placeholder { @content; }
+	&:-ms-input-placeholder { @content; }
+	&::-webkit-input-placeholder { @content; }
+}
+

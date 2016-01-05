@@ -1,0 +1,9 @@
+@mixin primary-font($weight: 400, $style: normal) {
+    font-family: 'Roboto', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+body {
+    @include primary-font;
+}

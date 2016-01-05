@@ -1,0 +1,91 @@
+///* Table of Contents
+//==================================================
+//    #Base 950 Grid
+//    #Tablet (Portrait)
+//    #Mobile (Portrait)
+//    #Mobile (Landscape)
+//    #Clearing */
+//
+///* Font Sizes */
+///* Set body to font-size of 100%. 1em equals 16px  to convert px to em use the formula (font px size / 16) = #.#####em  */
+///* Set sizes in the responsive-site.css file*/
+///* Change body font-size % in the responsive-site.css file, as this is most likely to change on a per site basis */
+body {
+	font-size: 100%;
+}
+
+///* #Base 950 Grid
+//== STRUCTURE: ========================
+//    * Page width:            950 px
+//    * Number of columns:     24
+//    * Column width:          30 px
+//    * Margin width:          10 px
+//======================================
+//
+//   By default, the grid is 950px wide, with 24 columns
+//   spanning 30px, and a 10px margin between columns.
+//
+//   If you need fewer or more columns, use this formula to calculate
+//   the new total width:
+//
+//   $total-width: ($num-columns * $columns-width) + ($margin-width * ($num-columns - 1 ));
+//*/
+
+
+
+$total-width: ($num-columns * $columns-width) + ($margin-width * ($num-columns - 1 ));
+
+
+.container {
+	width: $total-width;
+	position: relative;
+	z-index:0;
+	margin: 0 auto;
+	padding: 0;
+	.column, .columns {
+		display: inline;
+		float: left;
+		margin: 0 $margin-width 0 0;
+		// Nested Column Classes
+		&.last { margin-right: 0; }
+	}
+
+	//base columns
+	@for $i from 1 through $num-columns {
+		@if $i == 1 {
+			.col#{$i}.columns, .col#{$i}.column { width: ($columns-width * $i) + (($i - 1) * $margin-width) ; }
+		} @else {
+			.col#{$i}.columns { width: ($columns-width * $i) + (($i - 1) * $margin-width) ; }
+		}
+	}
+}
+
+.row {
+	@include clearfix();
+	margin-bottom: 20px;
+	// Lines for doing float right instead of left to allow for a varied breakpoint
+	&.reverse {
+		& > .column, & > .columns {
+			float:right;
+			&.first { margin-right: 0; }
+			&.last { margin:0 $margin-width 0 0; }
+		}
+	}
+} // End Row
+
+//appends
+	@for $i from 1 through ($num-columns - 1) {
+		.append-#{$i} { padding-right: $columns-width * $i + $margin-width * $i; }
+	}
+	//prepends
+	@for $i from 1 through ($num-columns - 1) {
+		.prepend-#{$i} { padding-left: $columns-width * $i + $margin-width * $i; }
+	}
+	//pulls
+	@for $i from 1 through ($num-columns) {
+		.pull-#{$i} { margin-left: -($columns-width * $i + $margin-width * $i); }
+	}
+
+#{$mobile-nav-container} {
+	display: none;
+}

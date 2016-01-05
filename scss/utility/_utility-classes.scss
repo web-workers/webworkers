@@ -1,0 +1,42 @@
+//Use clearfix class on parent to clear nested columns,
+//or wrap each row of columns in a <div class="row">
+@mixin clearfix {
+	&:after, &:before {
+		display: block;
+		visibility: hidden;
+		overflow: hidden;
+		width: 0;
+		height: 0;
+		content: '\0020';
+	}
+	&:after {
+		clear: both;
+	}
+	& {
+		zoom: 1;
+	}
+}
+
+.group {
+	@include clearfix;
+}
+.clear {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+}
+
+
+.visuallyhidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	margin: -1px;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	border: 0;
+}

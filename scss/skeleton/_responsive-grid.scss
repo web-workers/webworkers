@@ -1,0 +1,126 @@
+
+//  /* #Tablet (Portrait)
+//  == STRUCTURE: ========================
+//   * Page width:            760 px
+//   * Number of columns:     24
+//   * Column width:          24 px
+//   * Margin width:          8 px
+//  ======================================
+//  By default, the grid is 760px wide, with 24 columns
+//  spanning 24px, and a 8px margin between columns.
+//  If you need fewer or more columns, use this formula to calculate
+//  the new total width:
+//
+//  Total width = (number_of_columns * column_width) - margin_width
+//  */
+//  /* Note: Design for a width of 768px */
+//  /* Max width is 949px + 15px for scroll bar width*/
+
+$tablet-width: ($num-tablet-columns * $columns-tablet-width) + ($margin-tablet-width * ($num-tablet-columns - 1 ));
+
+@include rf-mid-breaker($nav-break, $tablet-break) {
+
+	.container {
+		width: $tablet-width;
+		.column, .columns {
+			margin: 0 $margin-tablet-width 0 0;
+
+			@for $i from 1 through $num-tablet-columns {
+				@if $i == 1 {
+					&.col#{$i}, &.col#{$i} & { width: ($columns-tablet-width * $i) + (($i - 1) * $margin-tablet-width );}
+				} @else {
+					&.col#{$i} { width: ($columns-tablet-width * $i) + (($i - 1) * $margin-tablet-width );}
+				}
+			}
+		}
+	}
+
+	//Spans
+	@for $i from 1 through $num-tablet-columns {
+		.span-#{$i} { width: ($columns-tablet-width * $i) + (($i - 1) * $margin-tablet-width ); }
+	}
+
+	//Appends
+	@for $i from 1 through ($num-tablet-columns - 1) {
+		.append-#{$i} { padding-right: $columns-tablet-width * $i + $margin-tablet-width * $i;  }
+	}
+
+	//Prepends
+	@for $i from 1 through ($num-tablet-columns - 1) {
+		.prepend-#{$i} { padding-left: $columns-tablet-width * $i + $margin-tablet-width * $i;  }
+	}
+
+	//Pulls
+	@for $i from 1 through ($num-tablet-columns) {
+		.pull-#{$i} { margin-left: -($columns-tablet-width * $i + $margin-tablet-width * $i); }
+	}
+
+	//Reverse
+	.row.reverse > .column.last 					{ margin:0 $margin-tablet-width 0 0}
+
+}
+
+@include rf-break-smaller($nav-break) {
+	.container {
+		width: $phone-portrait-width;
+		&.columns, &.column, .columns, .column {
+			margin: 0 0 $margin-phone-width 0;
+			padding: 0;
+		}
+		[class*='col'] {
+			&.column, &.columns {
+				width: 100%;
+			}
+		}
+	}
+
+	.row {
+		&.reverse {
+			& > .column.last & > .columns.last {
+				margin: 0 ($margin-phone-width / 2) 0 0;
+			}
+		}
+	}
+
+	#{$mobile-nav-container} {
+		display: block;
+	}
+
+	#{$main-nav} {
+		display: none;
+	}
+
+}
+
+@include rf-mid-breaker($phone-break, $nav-break) {
+	.container {
+		width: $phone-landscape-width;
+		.column, .columns { margin: 0 0 $margin-phone-width 0; }
+		[class*='col'] {
+			&.column, &.columns {
+				width: 100%;
+			}
+		}
+	}
+
+	#{$mobile-nav-container} {
+		display: block;
+	}
+
+	#{$main-nav} {
+		display: none;
+	}
+
+	.scale-width-grid {
+		max-width: 100%;
+		height: auto;
+	}
+	.scale-width-grid-full {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.container {
+	@include clearfix();
+}
