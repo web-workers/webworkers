@@ -9,8 +9,9 @@
 
 <header>
     <div class="logo">
-        <img src="img/webworkers.svg" alt="Web Workers" />
+        <a href="#" title="Hello"><img src="img/webworkers.svg" alt="Web Workers" /></a>
     </div>
+    <h1>Web Workers is a community of designers, developers, UXers and all around tech- and web-savvy individuals that meet in person and online to discuss all the goings on of the wide, wide world of the Web.
     <nav>
         <ul>
             <li><a href="#">Hello World</a></li>
@@ -48,7 +49,7 @@
         <h2>Podcast</h2>
     </article>
 
-    <article class="contact">
+    <article class="contact" style="display: none;">
         <h2>Get in Touch</h2>
     </article>
 </section>

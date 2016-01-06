@@ -3,15 +3,37 @@ body {
 
 }
 header {
-	background-color: $tertiary-color;
+	background-color: $dark-grey;
 	flex: 0 0 250px;
+	text-align: center;
 
-
+	h1 {
+		font-size: 1.0em;
+		color: $white;
+		@include primary-font();
+		margin: 10px 10px 20px;
+		padding: 10px 0;
+		text-transform: none;
+	}
 	.logo {
 		padding: 75px 10px;
 		background-color: $tertiary-color;
-		border-bottom: 3px solid $quatenary-color;
+		border-bottom: 1px solid $secondary-color;
+		margin-bottom: 20px;
 
+	}
+	a {
+		color: $secondary-color;
+	}
+	ul {
+		margin: 0;
+		padding: 0;
+		@include secondary-font;
+		li {
+			list-style: none;
+			padding: 10px 0;
+
+		}
 	}
 
 }
@@ -19,16 +41,19 @@ header {
 	flex: 10 10;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 
 	article {
 		flex-wrap: wrap;
 		flex: 1 1 40%;
 		padding: 3%;
 		h2 {
-		    display: table;
+			display: table;
 		    white-space: nowrap;
+		    width: 100%;
+		    text-align: center;
 		    &:before, &:after {
-		      border-top: 2px solid $primary-color;
+		      border-top: 2px solid $dark-grey;
 		      content: '';
 		      display: table-cell;
 		      position: relative;
@@ -37,6 +62,10 @@ header {
 		    }
 		    &:before { right: 1.5%; }
 		    &:after { left: 1.5%; }
+		}
+
+		&.podcast {
+			flex-basis: 100%;
 		}
 
 	}
