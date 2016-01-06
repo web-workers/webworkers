@@ -17,7 +17,7 @@ header {
 	}
 	.logo {
 		padding: 75px 10px;
-		background-color: $tertiary-color;
+		background-color: lighten($dark-grey, 5%);
 		border-bottom: 1px solid $secondary-color;
 		margin-bottom: 20px;
 

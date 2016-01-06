@@ -1,0 +1,14 @@
+.button {
+	display: block;
+	padding: 5px 20px;
+	border-top: 3px solid $secondary-color;
+	border-bottom: 3px solid $secondary-color;
+	text-align: center;
+	color: $secondary-color;
+	@include secondary-font;
+
+	&:hover {
+		background: $secondary-color;
+		color: $white;
+	}
+}
