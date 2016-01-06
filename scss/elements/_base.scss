@@ -24,5 +24,20 @@ header {
 		flex-wrap: wrap;
 		flex: 1 1 40%;
 		padding: 3%;
+		h2 {
+		    display: table;
+		    white-space: nowrap;
+		    &:before, &:after {
+		      border-top: 2px solid $primary-color;
+		      content: '';
+		      display: table-cell;
+		      position: relative;
+		      top: .75em;
+		      width: 45%;
+		    }
+		    &:before { right: 1.5%; }
+		    &:after { left: 1.5%; }
+		}
+
 	}
 }

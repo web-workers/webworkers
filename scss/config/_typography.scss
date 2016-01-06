@@ -1,9 +1,24 @@
 @mixin primary-font($weight: 400, $style: normal) {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'OpenSans-CondLight', sans-serif;
+    font-style: $style;
+    font-weight: $weight;
+}
+@mixin secondary-font($weight: 400, $style: normal) {
+    font-family: 'antonio-bold', sans-serif;
     font-style: $style;
     font-weight: $weight;
 }
 
 body {
     @include primary-font;
+    font-size: 18px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include secondary-font();
+    color: $secondary-color;
+    letter-spacing: -1px;
+}
+h1, h2, h3 {
+    text-transform: uppercase;
 }
