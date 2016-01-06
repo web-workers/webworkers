@@ -2,6 +2,11 @@ body {
 	display: flex;
 
 }
+.background-container {
+	background-color: rgba($white, .9);
+	padding: 30px;
+}
+
 header {
 	background-color: $dark-grey;
 	flex: 0 0 250px;

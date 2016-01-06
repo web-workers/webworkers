@@ -16,9 +16,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     @include secondary-font();
-    color: $secondary-color;
     letter-spacing: -1px;
 }
 h1, h2, h3 {
     text-transform: uppercase;
+    color: $secondary-color;
+}
+h4, h5, h6 {
+    color: $primary-color;
 }

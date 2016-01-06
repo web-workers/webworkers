@@ -1,0 +1,23 @@
+.events {
+	background: $dark-grey;
+	&:after {
+		background: url('/img/hm-logo.svg') no-repeat center center;
+		background-size: cover;
+		opacity: 0.1;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		position: absolute;
+	}
+	.logos {
+		display: flex;
+		text-align: center;
+		max-height: 100px;
+
+		img {
+			flex: 1 1 150px;
+			width: 150px;
+		}
+	}
+}

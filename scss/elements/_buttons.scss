@@ -6,6 +6,7 @@
 	text-align: center;
 	color: $secondary-color;
 	@include secondary-font;
+	text-transform: uppercase;
 
 	&:hover {
 		background: $secondary-color;
