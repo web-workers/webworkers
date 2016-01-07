@@ -2,8 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Static Build</title>
+    <title>Web Workers - A community of designers, developers, UXers and all around tech- and web-savvy individuals that meet in person and online to discuss all the goings on of the wide, wide world of the Web.</title>
     <link rel="stylesheet" href="/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
 
@@ -11,7 +13,7 @@
     <div class="logo">
         <a href="/" title="Hello"><img src="img/webworkers.svg" alt="Web Workers" /></a>
     </div>
-    <h1>Web Workers is a community of designers, developers, UXers and all around tech- and web-savvy individuals that meet in person and online to discuss all the goings on of the wide, wide world of the Web.
+    <h1>Web Workers is a community of designers, developers, UXers and all around tech- and web-savvy individuals that meet in person and online to discuss all the goings on of the wide, wide world of the Web.</h1>
 
     <div class="social">
         <a href="http://twitter.com/memphisww"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -56,8 +58,8 @@
     <article class="upcoming">
         <div class="background-container">
 
-            <h2>Upcoming Meetup</h2>
-            <h3>New Years Resolutions</h3>
+            <h2>Next Meetup</h2>
+            <h3>New Year's Resolutions</h3>
             <p>Meet with people in Memphis interested in web design, front-end development, and user experience (UX) design. </p>
             <p>Join us in January for a roundtable discussion on New Year's resolutions!  What are your goals for the new year? Learning a new framework? Sketching every day? Venturing into back-end programming (gasp!)?</p>
             <p>If you're excited about new tech, trends, & tools coming out next year, be sure to join us and share with the group!</p>
@@ -73,12 +75,12 @@
             <!-- <div class="logos">
                 <img src="/img/socialwebworkers.svg" alt="Web Workers" /> <img src="/img/hm-logo.svg" />
             </div> -->
-            <p>HACKmemphis and Memphis Web Workers will be putitng on a Nodebots day in 2016! We're really excited about the intersection of JavaScript and hardware and are ready to make some robots bend to our will!</p>
+            <p>HACKmemphis and Memphis Web Workers will be putting on a Nodebots day in 2016! We're really excited about the intersection of JavaScript and hardware and are ready to make some robots bend to our will!</p>
             <!-- Begin MailChimp Signup Form -->
-            <h4>Sign up to be notified when tickets are for sale</h4>
+            <a class="button" href="http://nodebots.hackmemphis.com" title="Sign up to be notified when Nodebot tickets come available">Sign up to be notified when tickets are for sale &raquo;</a>
             <div id="mc_embed_signup" class="row align-center">
                 <div class="small-10 columns">
-                <form action="//HACKmemphis.us9.list-manage.com/subscribe/post?u=c2f50ac1ae03bc1caf4c342ca&amp;id=e2b54ec9db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <!-- <form action="//HACKmemphis.us9.list-manage.com/subscribe/post?u=c2f50ac1ae03bc1caf4c342ca&amp;id=e2b54ec9db" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div id="mc_embed_signup_scroll">
                         <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
                         <div class="mc-field-group">
@@ -98,25 +100,39 @@
                             <div class="response" id="mce-error-response" style="display:none"></div>
                             <div class="response" id="mce-success-response" style="display:none"></div>
                         </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c2f50ac1ae03bc1caf4c342ca_e2b54ec9db" tabindex="-1" value=""></div>
+                        <!--<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c2f50ac1ae03bc1caf4c342ca_e2b54ec9db" tabindex="-1" value=""></div>
                         <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
                     </div>
-                </form>
+                </form> -->
             </div>
             </div>
             <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             <!--End mc_embed_signup-->
-    </div>
+        </div>
+        <div class="background-container">
+            <h2>Chat with Web Workers</h2>
+            <!-- <div class="logos">
+                <img src="/img/socialwebworkers.svg" alt="Web Workers" /> <img src="/img/hm-logo.svg" />
+            </div> -->
+            <p>The Web Workers currently utilize the #memtech community Slack. We have our own channel, but there's also plenty of folks and other topics to join in!</p>
+            <a class="button" href="http://www.memphistechnology.org/blog/2015/05/19/join-memtech-on-slack-chat/" title="Chat with us on Slack">Join the Community &raquo;</a>
+        </div>
+
 
     </article>
-<!--
+
     <article class="podcast">
-        <h2>Podcast</h2>
-    </article> -->
+        <h2>Our Sponsors</h2>
+        <div class="logos">
+            <a href="http://coworkmemphis.com/"><img src="/img/sponsors/cowork.jpg"></a>
+            <a href="http://www.vaco.com/memphis"><img src="/img/sponsors/vaco.png" alt="Web Workers"></a>
+            <a href="http://jetbrains.com"><img src="/img/sponsors/jetbrains.png"></a>
+        </div>
+    </article>
 
     <!-- <article class="contact" style="display: none;">
         <h2>Get in Touch</h2>
-    </article> -->
+    </article>
 </section>
 
 </div>

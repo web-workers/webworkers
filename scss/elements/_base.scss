@@ -1,17 +1,27 @@
 body {
 	display: flex;
-
+	background: $dark-grey;
+	@include tablet-phone-break {
+		flex-direction: column;
+	}
 }
 .background-container {
 	background-color: rgba($white, .9);
 	padding: 30px;
+	margin: 10px 0;
 }
 
 header {
 	background-color: $dark-grey;
 	flex: 0 0 250px;
 	text-align: center;
-
+	@include tablet-phone-break {
+		flex-direction: row;
+		flex-basis: auto;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
 	h1 {
 		font-size: 1.0em;
 		color: $white;
@@ -19,12 +29,23 @@ header {
 		margin: 10px 10px 20px;
 		padding: 10px 0;
 		text-transform: none;
+		@include tablet-phone-break {
+			order: 4;
+			flex: 1 1 100%;
+		}
 	}
 	.logo {
 		padding: 75px 10px;
 		background-color: lighten($dark-grey, 5%);
 		border-bottom: 1px solid $secondary-color;
 		margin-bottom: 20px;
+		@include tablet-phone-break {
+			flex: 2 1;
+			background-color: transparent;
+			border-bottom: 0;
+			padding: 10px;
+			margin: 5px 0;
+		}
 
 	}
 	.social {
@@ -37,6 +58,39 @@ header {
 		}
 		a:hover svg {
 			fill: $secondary-color
+		}
+		@include tablet-phone-break {
+			order: 3;
+			flex: 1 1 100%;
+			margin: 0 25px;
+			text-align: right;
+		}
+		@include phone-break {
+			text-align: center;
+		}
+	}
+	nav {
+		@include tablet-phone-break {
+			flex: 4 4;
+			margin-right: 25px;
+			text-align: right;
+			ul {
+				list-style: none;
+				li {
+					display: inline;
+					margin: 3px 10px;
+				}
+			}
+		}
+		@include phone-break {
+			font-size: .75em;
+			flex: 2 2;
+			ul li {
+				display: block;
+				clear: both;
+				margin-bottom: 5px;
+			}
+
 		}
 	}
 	a {
@@ -51,10 +105,18 @@ header {
 			padding: 10px 0;
 
 		}
+		@include tablet-phone-break {
+
+		}
+	}
+	@include tablet-phone-break {
+		flex-direction: row;
+
 	}
 
 }
 .main-content {
+
 	flex: 10 10;
 	display: flex;
 	flex-wrap: wrap;
@@ -85,5 +147,8 @@ header {
 			flex-basis: 100%;
 		}
 
+	}
+	@include tablet-phone-break {
+		display: block;
 	}
 }
