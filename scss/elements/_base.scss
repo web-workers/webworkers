@@ -27,6 +27,18 @@ header {
 		margin-bottom: 20px;
 
 	}
+	.social {
+		margin: 15px 0 5px;
+		svg {
+			height: 30px;
+			width: 30px;
+			fill: $white;
+			transition: fill .4s ease;
+		}
+		a:hover svg {
+			fill: $secondary-color
+		}
+	}
 	a {
 		color: $secondary-color;
 	}

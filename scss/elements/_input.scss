@@ -1,0 +1,81 @@
+input, textarea {
+    display: inline-block;
+    border: 2px solid $light-grey;
+    padding: 5px 10px;
+    font-size: 15px;
+	width: 95%;
+	margin-bottom: 20px;
+    @include input-placeholder {
+        color: $dark-grey;
+        font-style: italic;
+    }
+	&.button {
+		width: 100%;
+		background-color: transparent;
+		border-left: 0;
+		border-right: 0;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+    &.error {
+        border-color: $error;
+        margin-bottom: 0;
+        @include input-placeholder {
+            color: $error;
+        }
+    }
+}
+label {
+	display: none;
+}
+textarea {
+    width: 100%;
+    min-height: 100px;
+    box-sizing: border-box;
+    @include primary-font;
+}
+.select-wrap {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    select::-ms-expand {
+        display: none;
+    }
+
+    select {
+        width: 100%;
+        display: inline-block;
+        appearance: none;
+        border-radius: 0;
+        padding: 5px 10px;
+        font-size: 15px;
+        @include primary-font(400, italic);
+        color: $dark-grey;
+        border: 2px solid $light-grey;
+        z-index: 1;
+        &.error {
+            border-color: $error;
+            color: $error;
+        }
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        width: 35px;
+        height: 100%;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        border-left: 2px solid $light-grey;
+        z-index: 0;
+        background: url(../images/icons/down-arrow.svg) no-repeat center center;
+    }
+    &.error {
+        select, &:after {
+            border-color: $error;
+            color: $error;
+        }
+    }
+
+}
