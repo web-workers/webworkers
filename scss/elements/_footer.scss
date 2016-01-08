@@ -1,0 +1,24 @@
+.footer {
+	background: $secondary-color;
+	color: $dark-grey;
+	h2 {
+		color: $white;
+
+	}
+	.logos {
+		display: flex;
+		text-align: center;
+
+		a {
+			flex: 1 1;
+			img {
+				height: 60px;
+			}
+		}
+	}
+}
+.main-content article.footer h2 {
+	&:before, &:after {
+		border-top: 2px solid $white;
+	}
+}
