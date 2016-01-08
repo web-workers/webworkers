@@ -46,6 +46,9 @@ header {
 			padding: 10px;
 			margin: 5px 0;
 		}
+		svg g.main-text path {
+			fill: $tertiary-color;
+		}
 
 	}
 	.social {
@@ -95,6 +98,9 @@ header {
 	}
 	a {
 		color: $secondary-color;
+		&:hover {
+			color: lighten($secondary-color, 15%);
+		}
 	}
 	ul {
 		margin: 0;
