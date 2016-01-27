@@ -8,7 +8,7 @@ Web Workers is a community of designers, developers, UXers and all around tech- 
 
 ## What is this repo?
 
-The [http://memphiswebworkers.com/](memphiswebworkers.com) site is generated from the code in this public repository.  Enhancements to the site are welcome!
+The [memphiswebworkers.com](http://memphiswebworkers.com) site is generated from the code in this public repository.  Enhancements to the site are welcome!
 
 ## How can I contribute?
 
@@ -16,7 +16,7 @@ You're going to need a tiny bit of Node and `git` skills: get local copy of `npm
 
 ### Newer contributors
 
-There is likely to be some low-hanging fruit available on the [https://github.com/web-workers/webworkers/issues](repo issues page).
+There is likely to be some low-hanging fruit available on the [repo issues page](https://github.com/web-workers/webworkers/issues).
 
 ## Building the site
 
