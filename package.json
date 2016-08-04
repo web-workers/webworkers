@@ -26,7 +26,8 @@
     "grunt-webfont": "^0.5.4",
     "surge": "^0.17.4",
     "watchify": "^3.4.0",
-    "wintersmith": "^2.3.2"
+    "wintersmith": "^2.3.2",
+    "wintersmith-nunjucks": "^1.1.0"
   },
   "browserify": {
     "transform": [
