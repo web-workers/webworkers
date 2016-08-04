@@ -24,7 +24,7 @@
     "grunt-shell": "^1.1.2",
     "grunt-svg2png": "^0.2.7",
     "grunt-webfont": "^0.5.4",
-    "surge": "^0.17.4",
+    "surge": "^0.18",
     "watchify": "^3.4.0",
     "wintersmith": "^2.3.2",
     "wintersmith-nunjucks": "^1.1.0"
