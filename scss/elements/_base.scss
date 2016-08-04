@@ -127,7 +127,9 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-
+    &.interior {
+        background-color: #FAF5F0;
+    }
 	article {
 		flex-wrap: wrap;
 		flex: 1 1 40%;

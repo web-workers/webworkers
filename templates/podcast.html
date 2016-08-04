@@ -1,0 +1,35 @@
+{% extends "interior.html" %}
+
+
+{% block content %}
+    <article class="podcast">
+
+        <h1>Web Workers Podcast</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In facilisis mattis dui, id tincidunt libero dignissim quis. Nunc ac tincidunt nisl. Duis sapien sapien, tempus a lacus id, fringilla pulvinar purus. Maecenas non metus nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas fringilla tortor nunc. Sed a eleifend augue, at convallis est. Morbi imperdiet euismod felis, eu venenatis dolor feugiat sit amet. Etiam ex enim, vestibulum sed suscipit et, tincidunt sit amet enim.
+        </p>
+
+
+        {% for podcast in podcast %}
+
+            <h3>{{ podcast.title }}</h3>
+            <p>
+                {{ podcast.description }}
+            </p>
+
+
+            <audio controls="controls" buffered preload="auto">
+              Your browser does not support the <code>audio</code> element.
+              <source src="{{ podcast.link }}" type="audio/mp4">
+            </audio>
+
+
+        {% endfor %}
+
+
+</article>
+
+{% endblock %}
+
+
+{% block sponsors %}{% endblock %}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:itunesu="http://www.itunesu.com/feed" version="2.0">
+<channel>
+<link>http://www.memphiswebworkers.com</link>
+<language>en-us</language>
+<image>
+<url>http://memphiswebworkers.com/img/webworkers.svg</url>
+<link>http://www.memphiswebworkers.com</link>
+</image>
+<itunes:owner>
+<itunes:name>Web Workers Podcast</itunes:name>
+<itunes:email>memphiswebworkers@gmail.com</itunes:email>
+</itunes:owner>
+<itunes:category text="Technology">
+</itunes:category>
+<itunes:keywords>technology, css, html, web, digital</itunes:keywords>
+<itunes:explicit>no</itunes:explicit>
+<itunes:image href="http://memphiswebworkers.com/img/webworkers.svg" />
+<atom:link href="http://memphiswebworkers.com/podcast/feed.xml" rel="self" type="application/rss+xml" />
+<pubDate>Sun, 01 Jan 2012 00:00:00 EST</pubDate>
+<title>Web Workers podcast</title>
+<itunes:author>Web Workers</itunes:author>
+<description>A Podcast for those who work on the web</description>
+<itunes:summary>A Podcast for those who work on the web</itunes:summary>
+
+<item>
+    <title>Episode I: The Phantom Podcast</title>
+    <description>Lipsum</description>
+    <itunes:summary>Lipsum</itunes:summary>
+    <enclosure url="https://s3.amazonaws.com/wwpodcast/Episode+I+-+The+Webworking+Menace.m4a" type="audio/mpeg" length="1" />
+    <guid>https://s3.amazonaws.com/wwpodcast/Episode+I+-+The+Webworking+Menace.m4a</guid>
+    <itunes:duration>H:MM:SS</itunes:duration>
+    <pubDate>Thu, 02 Feb 2012 00:00:00 EST</pubDate>
+</item>
+
+
+</channel>
+</rss>
