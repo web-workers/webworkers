@@ -29,8 +29,8 @@
     <itunes:summary>{{ podcast.description }}</itunes:summary>
     <enclosure url="{{ podcast.link }}" type="audio/mpeg" length="1" />
     <guid>{{ podcast.link }}</guid>
-    <itunes:duration>0:30:15</itunes:duration>
-    <pubDate>02 Feb 2016 00:00:00 CST</pubDate>
+    <itunes:duration>{{ podcast.duration }}</itunes:duration>
+    <pubDate>{{ podcast.pubdate }}</pubDate>
 </item>
 {% endfor %}
 

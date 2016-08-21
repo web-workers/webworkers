@@ -13,7 +13,16 @@
         {
             "title": "Episode I: The Phantom Podcast",
             "description": "The hosts discuss their various backgrounds, how they got into tech and how newbies and beginners can find their way in the ever-shifting landscape",
-            "link": "https://s3.amazonaws.com/wwpodcast/Episode+I+-+The+Webworking+Menace.m4a"
+            "link": "https://s3.amazonaws.com/wwpodcast/Episode+I+-+The+Webworking+Menace.m4a",
+            "duration": "0:36:11",
+            "pubdate": "09 Feb 2016 00:00:00 CST"
+        },
+        {
+            "title": "Episode 2: JavaScript Fatigue",
+            "description": "Ever feel like there's a new JavaScript library, framework or technique every week? That's probably because there is. Bryan, Eric and Nathanael discuss getting fatigued, fighting through it.",
+            "link": "https://s3.amazonaws.com/wwpodcast/episode2.m4a",
+            "duration": "0:37:36",
+            "pubdate": "23 Aug 2016 00:00:00 CST"
         }
     ]
   },
