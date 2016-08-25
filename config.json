@@ -5,9 +5,9 @@
     "description": "Description",
     "keywords": "development, ux, strategy",
     "meetup": {
-        "title": "August Meetup",
-        "description": "<p>The co-hosts will be leading the charge this month with some exciting new content...</p><p>Bryan Robinson will discuss modern CSS with the spanking new CSS Grid Layout. </p><p>Eric Terpstra will dish out the latest and greatest in the Meteor framework, and why it can be great for your next project.</p><p>As always, food and drink and friendly faces will be provided.</p><p>Web Workers is graciously hosted by the FedEx Institute of Technology. Here's a link to a Google Map.</p><p>Room: FIT 225 (2nd floor)</p><p>Parking: The Deloach Parking Garage is $3/hr, and is right across the street from the FedEx Institute of Technology (FIT). You can also buy a 1-day pass for general parking for $2 -- see visitor parking for more details.</p>",
-        "link": "http://www.meetup.com/memphis-technology-user-groups/events/232359918/"
+        "title": "September Meetup",
+        "description": "<p>There won't be a September meetup. We encourage all of our members to attend our sponsor's &emdash; Vaco &embdash; Sundown in Geektown event Sept. 13 at 5:30 p.m. RSVP below</p>",
+        "link": "https://www.eventbrite.com/e/sundown-in-geektown-tickets-26120767920"
     },
     "podcast": [
         {
