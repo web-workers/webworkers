@@ -23,6 +23,13 @@
             "link": "https://s3.amazonaws.com/wwpodcast/episode2.m4a",
             "duration": "0:37:36",
             "pubdate": "23 Aug 2016 00:00:00 CST"
+        },
+        {
+            "title": "Episode 3: Web Workers Rewind - Modern CSS",
+            "description": "From the August Web Workers meetup in Memphis, Tenn. Bryan speaks about Post-Modern CSS including Object-Fit, Clip-path and CSS Grid.",
+            "link": "https://s3.amazonaws.com/wwpodcast/episode+3.m4a",
+            "duration": "0:35:54",
+            "pubdate": "19 Sept 2016 00:00:00 CST"
         }
     ]
   },
