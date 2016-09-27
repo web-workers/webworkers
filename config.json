@@ -30,6 +30,13 @@
             "link": "https://s3.amazonaws.com/wwpodcast/episode+3.m4a",
             "duration": "0:35:54",
             "pubdate": "19 Sept 2016 00:00:00 CST"
+        },
+        {
+            "title": "Episode 4: Web Workers Rewind - Meteor Up and Running",
+            "description": "From the August Web Workers meetup in Memphis, Tenn. Eric talks about getting up and running in MeteorJS.",
+            "link": "https://s3.amazonaws.com/wwpodcast/Episode+4.m4a",
+            "duration": "0:38:05",
+            "pubdate": "26 Sept 2016 00:00:00 CST"
         }
     ]
   },
