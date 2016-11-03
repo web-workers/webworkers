@@ -5,9 +5,9 @@
     "description": "Description",
     "keywords": "development, ux, strategy",
     "meetup": {
-        "title": "October Meetup",
-        "description": "<p>Bryan Robinson will be leading a beginners HTML/CSS workshop (advanced web workers welcome). Meet with people in Memphis interested in web design, front-end development, and user experience (UX) design.</p>",
-        "link": "https://www.meetup.com/memphis-technology-user-groups/events/233987292/"
+        "title": "November Meetup",
+        "description": "<p>This month we'll be examining COLOR! Timothy Brownawell will give a short talk on color and contrast, and we'll follow it up with a roundtable discussion, and a few short CSS and JavaScript demos.</p>",
+        "link": "http://www.meetup.com/memphis-technology-user-groups/events/235161645/"
     },
     "podcast": [
         {
