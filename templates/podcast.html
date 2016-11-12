@@ -10,20 +10,20 @@
         </p>
 
 
-        {% for podcast in podcast %}
-
-            <h3>{{ podcast.title }}</h3>
-            <p>
-                {{ podcast.description }}
-            </p>
-
-
-            <audio controls="controls" buffered preload="auto">
-              Your browser does not support the <code>audio</code> element.
-              <source src="{{ podcast.link }}" type="audio/mp4">
-            </audio>
+        {% for podcast in podcast|reverse %}
+            <section class="episode">
+                <h3>{{ podcast.title }}</h3>
+                <p>
+                    {{ podcast.description|safe }}
+                </p>
 
 
+                <audio controls="controls" buffered preload="auto">
+                  Your browser does not support the <code>audio</code> element.
+                  <source src="{{ podcast.link }}" type="audio/mp4">
+                </audio>
+
+            </section>
         {% endfor %}
 
 
