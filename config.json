@@ -44,6 +44,13 @@
             "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+5+Native+Apps+vs+Web+Apps.m4a",
             "duration": "0:12:51",
             "pubdate": "15 Nov 2016 00:00:00 CST"
+        },
+        {
+            "title": "Episode 6: Education via Documentation",
+            "description": "Based on David Gilbertson's '<a href='https://hackernoon.com/19-things-i-learnt-reading-the-nodejs-docs-8a2dcc7f307f#.nr1wvw47b'>19 Things I learnt reading the NodeJS docs</a>,' we discuss Node, API Documentation vs. Tutorials and learning new things in general.",
+            "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+6+-+Documentation+Education.m4a",
+            "duration": "0:11:36",
+            "pubdate": "29 Nov 2016 00:00:00 CST"
         }
     ]
   },
