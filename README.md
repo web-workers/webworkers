@@ -29,4 +29,5 @@ There is likely to be some low-hanging fruit available on the [repo issues page]
 
 1. clone this
 2. `npm install`
-3. `grunt` ... this should open up a browser window for previewing the site.
+3. `grunt` 
+4. `jekyll serve`
