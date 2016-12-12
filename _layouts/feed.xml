@@ -22,17 +22,8 @@
 <itunes:author>Web Workers</itunes:author>
 <description>A Podcast for those who work on the web</description>
 <itunes:summary>A Podcast for those who work on the web</itunes:summary>
-{% for podcast in podcast %}
-<item>
-    <title>{{ podcast.title }}</title>
-    <description>{{ podcast.description }}</description>
-    <itunes:summary>{{ podcast.description }}</itunes:summary>
-    <enclosure url="{{ podcast.link }}" type="audio/mpeg" length="1" />
-    <guid>{{ podcast.link }}</guid>
-    <itunes:duration>{{ podcast.duration }}</itunes:duration>
-    <pubDate>{{ podcast.pubdate }}</pubDate>
-</item>
-{% endfor %}
+
+{{ content }}
 
 </channel>
 </rss>

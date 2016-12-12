@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Episode I: The Phantom Podcast",
+        "description": "The hosts discuss their various backgrounds, how they got into tech and how newbies and beginners can find their way in the ever-shifting landscape",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+I+-+The+Webworking+Menace.m4a",
+        "duration": "0:36:11",
+        "pubdate": "09 Feb 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 2: JavaScript Fatigue",
+        "description": "Ever feel like there's a new JavaScript library, framework or technique every week? That's probably because there is. Bryan, Eric and Nathanael discuss getting fatigued, fighting through it.",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/episode2.m4a",
+        "duration": "0:37:36",
+        "pubdate": "23 Aug 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 3: Web Workers Rewind - Modern CSS",
+        "description": "From the August Web Workers meetup in Memphis, Tenn. Bryan speaks about Post-Modern CSS including Object-Fit, Clip-path and CSS Grid.",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/episode+3.m4a",
+        "duration": "0:35:54",
+        "pubdate": "19 Sept 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 4: Web Workers Rewind - Meteor Up and Running",
+        "description": "From the August Web Workers meetup in Memphis, Tenn. Eric talks about getting up and running in MeteorJS.",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+4.m4a",
+        "duration": "0:38:05",
+        "pubdate": "26 Sept 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 5: Native Apps vs. Progressive Web Apps",
+        "description": "This week we take on an age-old argument: Native phone apps vs Progressive Web apps. Based on Eric Elliot's Medium post <a href='https://medium.com/javascript-scene/native-apps-are-doomed-ac397148a2c0#.b9ptuz1wo'>Native Apps are Doomed</a>, we discuss the pros and cons of both ecosystems.",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+5+Native+Apps+vs+Web+Apps.m4a",
+        "duration": "0:12:51",
+        "pubdate": "15 Nov 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 6: Education via Documentation",
+        "description": "Based on David Gilbertson's '<a href='https://hackernoon.com/19-things-i-learnt-reading-the-nodejs-docs-8a2dcc7f307f#.nr1wvw47b'>19 Things I learnt reading the NodeJS docs</a>,' we discuss Node, API Documentation vs. Tutorials and learning new things in general.",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+6+-+Documentation+Education.m4a",
+        "duration": "0:11:36",
+        "pubdate": "29 Nov 2016 00:00:00 CST"
+    }
+]

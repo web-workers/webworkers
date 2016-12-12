@@ -1,0 +1,36 @@
+---
+layout: interior
+permalink: /podcast/
+---
+
+<article class="podcast">
+
+    <h1>Web Workers Podcast</h1>
+    <p>
+        A podcast covering all things interesting to those who work on the Web. Topics include modern CSS, JavaScript, new trends in HTML, User Experience and Design. <a href="/podcast/feed.xml">Add our feed to your podcatcher of choice &raquo;</a>
+    </p>
+
+
+    {% for podcast in site.data.podcast|reverse %}
+        <section class="episode">
+            <h3>{{ podcast.title }}</h3>
+            <p>
+                {{ podcast.description|safe }}
+            </p>
+
+
+            <audio controls="controls" buffered preload="auto">
+              Your browser does not support the <code>audio</code> element.
+              <source src="{{ podcast.link }}" type="audio/mp4">
+            </audio>
+
+        </section>
+    {% endfor %}
+
+
+</article>
+
+<small>
+
+Royalty Free Creative Commons Music: <a href="http://www.bensound.com">www.bensound.com</a>
+</small>
