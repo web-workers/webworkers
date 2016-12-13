@@ -11,7 +11,7 @@ layout: layout
         {% for item in site.posts limit:1 %}
             <h3>{{ item.title }}</h3>
             {{ item.content }}
-            <a class="button" href="{{ item.link }}">{{ item.linkText }}</a>
+            {% if item.link %}<a class="button" href="{{ item.link }}">{{ item.linkText }}</a>{% endif %}
         {% endfor %}
 
 
