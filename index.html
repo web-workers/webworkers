@@ -7,16 +7,14 @@ layout: layout
     <div class="background-container">
 
         <h2>Next Meetup</h2>
-        <h3>April Meetup: Modern Layout for the Web</h3>
-        <p>Bryan Robinson will be presenting on various aspects of modern layout for the web.</p>
 
-        <p>We're not talking your grampa's layout. No CSS hacks; no frameworks; just the awesome that is modern CSS. From Flexbox to ideas to generate a new look and feel to designing in code.</p>
+        {% for item in site.posts limit:1 %}
+            <h3>{{ item.title }}</h3>
+            {{ item.content }}
+            <a class="button" href="{{ item.link }}">{{ item.linkText }}</a>
+        {% endfor %}
 
-        <p>A light dinner and soft drinks will be provided.</p>
 
-        <p>Meet with people in Memphis interested in web design, front-end development, and user experience (UX) design. </p>
-
-        <a href="http://www.meetup.com/memphis-technology-user-groups/events/229680827/" title="Find out more" class="button">RSVP Here &raquo;</a>
     </div>
 
 </article>
