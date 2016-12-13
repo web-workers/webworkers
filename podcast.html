@@ -11,7 +11,7 @@ permalink: /podcast/
     </p>
 
 
-    {% for podcast in site.data.podcast|reverse %}
+    {% for podcast in site.data.podcast reversed %}
         <section class="episode">
             <h3>{{ podcast.title }}</h3>
             <p>

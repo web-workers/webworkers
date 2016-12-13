@@ -40,5 +40,12 @@
         "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+6+-+Documentation+Education.m4a",
         "duration": "0:11:36",
         "pubdate": "29 Nov 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 7: Component Architecture in Sass",
+        "description": "We read David Kourshid's scotch.io article '<a href='https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization'>Aesthetic Sass: Architecture, Style and Organization</a>' and discuss the topics of reusability, naming and structure in Sass and CSS.",
+        "link": "https://s3.amazonaws.com/wwpodcast/Episode+7+Sass+Architecture.m4a",
+        "duration": "0:11:36",
+        "pubdate": "29 Nov 2016 00:00:00 CST"
     }
 ]

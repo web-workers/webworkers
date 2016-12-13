@@ -2,7 +2,7 @@
 layout: feed
 ---
 
-{% for podcast in site.data.podcast %}
+{% for podcast in site.data.podcast reversed %}
 <item>
     <title>{{ podcast.title }}</title>
     <description>{{ podcast.description }}</description>
