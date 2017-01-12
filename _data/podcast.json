@@ -46,6 +46,13 @@
         "description": "We read David Kourshid's scotch.io article '<a href='https://scotch.io/tutorials/aesthetic-sass-1-architecture-and-style-organization'>Aesthetic Sass: Architecture, Style and Organization</a>' and discuss the topics of reusability, naming and structure in Sass and CSS.",
         "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+7+Sass+Architecture.m4a",
         "duration": "0:11:36",
-        "pubdate": "29 Nov 2016 00:00:00 CST"
+        "pubdate": "13 Dec 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 8: CSS Shorthand Antipatterns",
+        "description": "This week we read CSS Wizardry's '<a href='http://csswizardry.com/2016/12/css-shorthand-syntax-considered-an-anti-pattern/'>CSS Shorthand Syntax Considered an Anti-Pattern</a>' and discuss the nature of the shorthand properties as well as whether or not this is actually an antipattern.",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+9+CSS+antipatterns.m4a",
+        "duration": "0:13:10",
+        "pubdate": "27 Dec 2016 00:00:00 CST"
     }
 ]
