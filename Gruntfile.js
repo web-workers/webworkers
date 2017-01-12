@@ -38,9 +38,9 @@ module.exports = function (grunt) {
 
         concurrent: {
             options: {
-                logConcurrentOutput: false
+                logConcurrentOutput: true
             },
-            main: ['watch', 'shell:jekyll']
+            main: ['watch:css', 'shell:jekyll']
         },
 
         shell: {
@@ -59,7 +59,7 @@ module.exports = function (grunt) {
 
     // Default task(s).
     grunt.registerTask('style', ['sass', 'autoprefixer']);
-    grunt.registerTask('default', ['shell:npm']);
+    grunt.registerTask('default', ['concurrent']);
 
 
 };
