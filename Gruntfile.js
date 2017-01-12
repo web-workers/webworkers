@@ -36,69 +36,16 @@ module.exports = function (grunt) {
             }
         },
 
-        browserSync: {
-            bsFiles: {
-                src :[
-                    'css/style.css',
-                    'js/build/*.js',
-                    '**/*.php'
-                ]
-            },
-            options: {
-                proxy: '0.0.0.0:4040',
-                watchTask: true
-            }
-        },
-
-        fontface: {
-            dist: {
-                options: {
-                    fontDir: 'fonts',
-                    template: '@include rf-font-face($font-family: {{font}}, $file: {{font}}, $short-name: {{font}}, $serif: sans);',
-                    outputFile: 'scss/config/_fonts.scss'
-
-                }
-            }
-        },
-
         concurrent: {
             options: {
                 logConcurrentOutput: true
             },
-            main: ['shell:npm', 'shell:phpServer', 'main']
+            main: ['watch:css', 'shell:jekyll']
         },
 
         shell: {
-            npm: {
-                command: "npm start"
-            },
-            phpServer: {
-                command: "php -S 0.0.0.0:4040 > /dev/null"
-            }
-        },
-
-        webfont: {
-            icons: {
-                src: 'img/icons/*.svg',
-                dest: 'fonts/icon-fonts',
-                destCss: 'scss/icons',
-                options: {
-                    engine: 'fontforge',
-                    ie7: false,
-                    'stylesheet': 'scss',
-                    'relativeFontPath': '../fonts/icon-fonts/',
-                    types: 'eot,woff,ttf,svg',
-                    syntax: 'bootstrap'
-
-                }
-            }
-        },
-
-        svg2png: {
-            all: {
-                files: [
-                    {cwd: 'img/', src: ['**/*.svg'], dest: 'img/'}
-                ]
+            jekyll: {
+                command: "jekyll serve"
             }
         }
 
@@ -107,16 +54,11 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-browser-sync');
-    grunt.loadNpmTasks('grunt-fontface');
-    grunt.loadNpmTasks('grunt-webfont');
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-concurrent');
-    grunt.loadNpmTasks('grunt-svg2png');
 
     // Default task(s).
     grunt.registerTask('style', ['sass', 'autoprefixer']);
-    grunt.registerTask('main', ['browserSync', 'watch']);
     grunt.registerTask('default', ['concurrent']);
 
 

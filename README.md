@@ -22,12 +22,16 @@ There is likely to be some low-hanging fruit available on the [repo issues page]
 
 ### Prerequisites:
 
+* Ruby 2 or 3 (the one that comes with OS X is OK)
+* [Jekyll](https://jekyllrb.com/docs/installation/) 
 * `git`
 * `node` with `npm`
+* `grunt-cli` installed globally (`npm install -g grunt-cli`)
 
 ### Test run
 
-1. clone this
-2. `npm install`
-3. `grunt` 
-4. `jekyll serve`
+1. clone this repo
+1. `npm install`
+1. `grunt style` 
+1. `grunt`
+1. Open `http://127.0.0.1:4000` 
