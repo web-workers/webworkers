@@ -8,10 +8,25 @@ layout: layout
 
         <h2>Next Meetup</h2>
 
-        {% for item in site.posts limit:1 %}
-            <h3>{{ item.title }}</h3>
-            {{ item.content }}
-            {% if item.link %}<a class="button" href="{{ item.link }}">{{ item.linkText }}</a>{% endif %}
+        {% for item in site.posts limit:5 %}
+
+            {% if forloop.first %}
+                <h3>{{ item.title }}</h3>
+                {{ item.content }}
+                {% if item.link %}<a class="button" href="{{ item.link }}">{{ item.linkText }}</a>{% endif %}
+
+                <br>
+                <h4>Past Meetups</h4>
+
+            {% else %}
+                {% if forloop.counter == 2 %}<ul>{% endif %}
+
+                    <li><a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></li>
+
+
+                {% if forloop.last %}</ul>{% endif %}
+            {% endif %}
+
         {% endfor %}
 
 
