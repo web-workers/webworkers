@@ -54,5 +54,14 @@
         "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+9+CSS+antipatterns.m4a",
         "duration": "0:13:10",
         "pubdate": "27 Dec 2016 00:00:00 CST"
+    },
+    {
+        "title": "Episode 9: A Discussion on Progressive Enhancement",
+        "description": "We're discussing some controversy from late 2016 this week. The idea that Progressive Enhancement IS a moral argument and why that makes it a better or worse argument. This is based on the blog post '<a href='https://sonniesedge.co.uk/blog/progressive-enhancement'>Yes, progressive enhancement is a f****** moral argument</a>'",
+        "link": "http://dts.podtrac.com/redirect.mp3/s3.amazonaws.com/wwpodcast/Episode+9+-+A+discussion+on+Progressive+Enhancement.m4a",
+        "duration": "0:17:16",
+        "pubdate": "31 Jan 2017 00:00:00 CST"
     }
+
+
 ]
