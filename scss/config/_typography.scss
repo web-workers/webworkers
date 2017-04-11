@@ -25,3 +25,16 @@ h1, h2, h3 {
 h4, h5, h6 {
     color: $primary-color;
 }
+
+.podcast {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+.event-header {
+    text-transform: none;
+    color: $primary-color;
+    font-size: 1.6em;
+    @include primary-font;
+}

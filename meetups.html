@@ -1,0 +1,22 @@
+---
+layout: interior
+permalink: /meetups/
+---
+
+<article class="podcast">
+
+    <h1>Web Workers Meetups</h1>
+    <p>
+        Join us on the Second Tuesday of every month for an appetizing taste into the world of web.  We take on all topics involving web.  Have an idea for a future talk?  Join the MemTech Slack group and message one of us. <a href="http://www.memphistechnology.org/blog/2015/05/19/join-memtech-on-slack-chat/">MemTech Slack&nbsp;&raquo;</a>
+    </p>
+
+
+    {% for post in site.posts %}
+        <section class="episode">
+            <h3 class="event-header">{{ post.title }}{% if post.eventDate %}<small class="event-date"> - {{ post.eventDate }}</small>{% endif %}</h3>
+            {{ post.content }}
+        </section>
+    {% endfor %}
+
+
+</article>

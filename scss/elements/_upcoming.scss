@@ -4,11 +4,4 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
-	h3 {
-		text-transform: none;
-		color: $primary-color;
-		font-size: 1.6em;
-		@include primary-font;
-	}
 }
