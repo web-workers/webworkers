@@ -12,8 +12,15 @@ layout: layout
         {% for item in site.posts limit:5 %}
 
             {% if forloop.first %}
-                <h3 class="event-header">{{ item.title }}{% if item.eventDate %}<small class="event-date"> - {{ item.eventDate }}</small>{% endif %}</h3>
-                {{ item.content }}
+                {% if item.hasNotes %}
+                    <a href="{{ item.url }}" title="{{ item.title }}">
+                {% endif %} 
+                    <h3 class="event-header">{{ item.title }}{% if item.eventDate %}<small class="event-date"> - {{ item.eventDate }}</small>{% endif %}</h3>
+                    {% if item.eventLocation %}<p class="event-location">{{ item.eventLocation }}</p>{% endif %}
+                {% if item.hasNotes %}
+                    </a>
+                {% endif %}
+                <p>{{ item.description }}</p>
                 {% if item.link %}<a class="button" href="{{ item.link }}">{{ item.linkText }}</a>{% endif %}
 
                 <br>
@@ -22,7 +29,15 @@ layout: layout
             {% else %}
                 {% if forloop.index == 2 %}<ul>{% endif %}
 
-                    <li><a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a></li>
+                    <li>
+                        {% if item.hasNotes %}
+                            <a href="{{ item.url }}" title="{{ item.title }}">
+                        {% endif %}
+                            {{ item.title }}
+                        {% if item.hasNotes %}
+                            </a>
+                        {% endif %}
+                    </li>
 
 
                 {% if forloop.last %}</ul>{% endif %}

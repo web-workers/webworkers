@@ -6,5 +6,6 @@ collections:
         permalink: /podcast/:path/
 
 url: http://memphiswebworkers.com/
+markdown: kramdown
 
 exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]

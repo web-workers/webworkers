@@ -16,3 +16,13 @@
 .event-date {
 	font-size: 1rem;
 }
+
+.event-location {
+	color: $secondary-color;
+}
+
+.upcoming {
+	.event-location, .event-header {
+		margin-bottom: 0;
+	}
+}

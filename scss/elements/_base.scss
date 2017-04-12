@@ -82,7 +82,7 @@ header {
 	nav {
 		@include tablet-phone-break {
 			flex: 4 4;
-			margin-right: 25px;
+			margin-right: 1rem;
 			text-align: right;
 			ul {
 				list-style: none;

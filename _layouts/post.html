@@ -4,7 +4,8 @@
 
 <article class="podcast">
 
-<h1 class="event-header">{{ page.title }}</h1>
+<h1 class="event-header">{{ page.title }}{% if page.eventDate %}<small class="event-date"> - {{ page.eventDate }}</small>{% endif %}</h1>
+{% if page.eventLocation %}<p class="event-location">{{ page.eventLocation }}</p>{% endif %}
 
 {{ content }}
 
