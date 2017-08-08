@@ -1,5 +1,5 @@
 ---
-title: SCSS Conventions
+title: CSS Can Do What?!
 link: /2017/08/08/August-meetup.html
 linkText: See the Notes
 layout: post
