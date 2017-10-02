@@ -1,6 +1,6 @@
 ---
 title: Use Eslint to write better JavaScript!
-link: /2017/08/08/August-meetup.html
+link: /2017/10/10/october-meetup.html
 linkText: See the Notes
 layout: post
 eventDate: October 10, 2017
