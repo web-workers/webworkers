@@ -6,11 +6,11 @@
   "devDependencies": {
     "grunt": "^1.0.0",
     "grunt-autoprefixer": "^3.0.3",
-    "grunt-cli": "^0.1.13",
+    "grunt-cli": "^1.0.0",
     "grunt-concurrent": "^2.3.1",
-    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^3.0.0",
-    "grunt-shell": "^1.1.2"
+    "grunt-shell": "^2.0.0"
   },
   "dependencies": {
     "node-sass": "^4.9.3"
