@@ -13,6 +13,7 @@
     "grunt-shell": "^2.0.0"
   },
   "dependencies": {
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "surge": "^0.20.1"
   }
 }
