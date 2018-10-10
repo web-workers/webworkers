@@ -1,5 +1,5 @@
 ---
-title: The Evolution of API Design: from RPC to GraphQL
+title: 'The Evolution of API Design: from RPC to GraphQL'
 linkText: See the Notes
 layout: post
 eventDate: May 1, 2018

@@ -5,12 +5,17 @@
 		color: $white;
 
 	}
+	.background-container {
+		background-color: rgba($white, .75);
+	}
 	.logos {
+		max-width: 800px;
+		margin: 0 auto;
 		display: flex;
 		text-align: center;
-
+		justify-content: space-around;
 		a {
-			flex: 1 1;
+			max-width: 25%;
 			img {
 				height: 60px;
 			}
