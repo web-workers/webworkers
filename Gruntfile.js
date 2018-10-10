@@ -2,6 +2,8 @@ module.exports = function (grunt) {
 
     "use strict";
 
+    const sass = require('node-sass');
+    
     // Project configuration.
     grunt.initConfig({
 
@@ -9,6 +11,7 @@ module.exports = function (grunt) {
 
         sass: {
             options: {
+                implementation: sass,
                 sourceMap: true
             },
             dist: {
@@ -45,7 +48,7 @@ module.exports = function (grunt) {
 
         shell: {
             jekyll: {
-                command: "jekyll serve"
+                command: "bundle exec jekyll serve"
             }
         }
 
